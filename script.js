@@ -16,3 +16,10 @@ hoverButton.addEventListener('mouseleave', function() {
     const display = document.getElementById('display');
     display.innerHTML = " "
 });
+
+const textInput = document.getElementById('textInput')
+const key = document.getElementById('key');
+
+textInput.addEventListener('keyup', function(event) {
+    key.innerText = `Latest Key Pressed: ${event.key}`;
+});
