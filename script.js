@@ -44,3 +44,30 @@ function handleFocus() {
 function handleBlur(){
 document.getElementById("focusdisplay").innerText = "Hey, come back here!"
 };
+
+// Access the parent element
+const list = document.getElementById('buttonList');
+
+// Attach event listener to the parent element
+list.addEventListener('click', function(event) {
+    
+    switch (event.target.id) {
+        case "button1":
+            alert("You clicked button1")
+            break;
+        case "button2":
+            alert("You clicked button2")
+            break;
+        case "button3":
+            alert("You clicked button3")
+            break;
+        case "button4":
+            alert("You clicked button4")
+            break;
+        case "button5":
+            alert("You clicked button5")
+            break;
+        default:
+            break;
+    }
+});
