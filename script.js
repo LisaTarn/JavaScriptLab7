@@ -23,3 +23,16 @@ const key = document.getElementById('key');
 textInput.addEventListener('keyup', function(event) {
     key.innerText = `Latest Key Pressed: ${event.key}`;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('myForm');
+    const username = document.getElementById('username');
+
+    // Handle form submission
+    form.addEventListener('submit', function(event) {
+        console.log('Form submitted');
+        event.preventDefault(); // Prevent the actual form submission
+        alert(`Username: ${username.value}`);
+    });
+
+});
