@@ -36,3 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
+function handleFocus() {
+    document.getElementById("focusdisplay").innerText = "You are typing"
+};
+
+function handleBlur(){
+document.getElementById("focusdisplay").innerText = "Hey, come back here!"
+};

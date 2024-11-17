@@ -19,9 +19,15 @@
  <form id="myForm">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" placeholder="Enter your username">
-    
-    
     <button type="submit">Submit</button>
 </form>
+<br>
+<label>
+    Text:
+    <input type="text" id="focusblurtext"  
+    onfocus="handleFocus()"
+    onblur="handleBlur()" />
+</label>
+<div id ="focusdisplay" style="padding: 20px; margin-top: 10px; border: 1px solid #000;"></div>
 </body>
 </html>
