@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>JavaScript Event Handling</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
+    <h1>JavaScript Event Handling</h1>
+    <div id="container">
+
     <!-- Button for event listener -->
-    <button id="hoverButton" style="padding: 20px; margin-top: 10px; border: 1px solid #000;">
-        Hover over me
+     
+    <button id="hoverButton">
+        Hover over me (Mouse Event)
     </button>
+
     <!-- Area to display Message-->
-     <div id="display" style="padding: 20px; margin-top: 10px; border: 1px solid #000;"></div>
-<!-- Keyboard Events -->
- <input type="text" id="textInput" />
- <div id="key" style="padding: 20px; margin-top: 10px; border: 1px solid #000;"></div>
+
+     <div id="display"></div><br>
+
+    <!-- Keyboard Events -->
+
+ <div class="instructions">Type Something (Keyboard Event):
+ <input type="text" id="textInput" /></div>
+ <div id="key"></div><br>
+
+    <!-- Form Events -->
+
  <form id="myForm">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" placeholder="Enter your username">
-    <button type="submit">Submit</button>
+    <div class="instructions"><label for="username">Username (Form Event):</label><br>
+    <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+    <button type="submit">Submit</button></div>
 </form>
 <br>
+
+    <!-- Focus Events -->
+
 <label>
-    Text:
+    <div class="instructions">Type Something Then Click Somewhere Else (Focus Event):
     <input type="text" id="focusblurtext"  
     onfocus="handleFocus()"
-    onblur="handleBlur()" />
+    onblur="handleBlur()" /></div>
 </label>
-<div id ="focusdisplay" style="padding: 20px; margin-top: 10px; border: 1px solid #000;"></div>
+<div id ="focusdisplay"></div><br>
 
-<p>Click an Item:</p>
+<!-- Event Delegation Events -->
+
+<div class="instructions">Click a Button (Event Delegation):
+    <br><br>
 <div class="buttonclass" id="buttonid">
-    <button id="button 1">Button 1</button>
-    <button id="button 2">Button 2</button>
-    <button id="button 3">Button 3</button>
-    <button id="button 4">Button 4</button>
+    <button id="button 1">Button 1</button><br>
+    <button id="button 2">Button 2</button><br>
+    <button id="button 3">Button 3</button><br>
+    <button id="button 4">Button 4</button><br>
 
+</div></div>
 </div>
 </body>
 </html>

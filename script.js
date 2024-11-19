@@ -17,6 +17,8 @@ hoverButton.addEventListener('mouseleave', function() {
     display.innerHTML = " "
 });
 
+// Handle Keyboard Events
+
 const textInput = document.getElementById('textInput')
 const key = document.getElementById('key');
 
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const username = document.getElementById('username');
 
     // Handle form submission
+
     form.addEventListener('submit', function(event) {
         console.log('Form submitted');
         event.preventDefault(); // Prevent the actual form submission
@@ -37,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// Handle Focus/Blur
+
 function handleFocus() {
     document.getElementById("focusdisplay").innerText = "You are typing"
 };
@@ -44,6 +49,8 @@ function handleFocus() {
 function handleBlur(){
 document.getElementById("focusdisplay").innerText = "Hey, come back here!"
 };
+
+// Handle Event Delegation
 
 const buttonclass = document.getElementById("buttonid");
 
