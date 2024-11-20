@@ -12,9 +12,9 @@ hoverButton.addEventListener('mouseenter', function() {
 });
 
 hoverButton.addEventListener('mouseleave', function() {
-    this.style.backgroundColor = 'transparent'
+    this.style.backgroundColor = 'lightgreen'
     const display = document.getElementById('display');
-    display.innerHTML = " "
+    display.innerHTML = "Where is the mouse pointer?"
 });
 
 // Handle Keyboard Events
