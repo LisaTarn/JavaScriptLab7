@@ -22,20 +22,21 @@ hoverButton.addEventListener('mouseleave', function() {
 const textInput = document.getElementById('textInput')
 const key = document.getElementById('key');
 
-textInput.addEventListener('keyup', function(event) {
+textInput.addEventListener('keypress', function(event) {
     key.innerText = `Latest Key Pressed: ${event.key}`;
 });
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('myForm');
     const username = document.getElementById('username');
+    const displayuserid = document.getElementById("display-userid");
 
     // Handle form submission
 
     form.addEventListener('submit', function(event) {
         console.log('Form submitted');
         event.preventDefault(); // Prevent the actual form submission
-        alert(`Username: ${username.value}`);
+        displayuserid.innerHTML = "Username: " + username.value;
     });
 
 });
